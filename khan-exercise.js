@@ -1300,7 +1300,9 @@ var Khan = (function() {
             $("#examples-show").hide();
         }
         // save a normal JS array of hints so we can shift() through them later
-        hints = hints.tmpl().children().get();
+        hints = hints.tmpl().children().each(function(i, hint) {
+            $(hint).addClass("hint");
+        }).get();
 
         if (hints.length === 0) {
             // Disable the get hint button

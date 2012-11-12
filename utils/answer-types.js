@@ -500,7 +500,9 @@ $.extend(Khan.answerTypes, {
                 validator = Khan.answerTypes[type](solarea, sol, fallback);
 
             $(this).data("validator", validator);
-            solutionArray.unshift(validator.solution);
+
+            // This should be push to add the elements in order of their text boxes
+            solutionArray.push(validator.solution);
         });
 
         var ret = function() {

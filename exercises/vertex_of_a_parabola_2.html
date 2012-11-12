@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html data-require="math cascading-qhints">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Vertex of a parabola 2</title>
+    <script src="../khan-exercise.js"></script>
+    <style type="text/css">
+        .sol input[type=text] {
+            width: 25pt !important;
+        }
+    </style>
+</head>
+<body>
+<div class="exercise">
+    <div class="problems">
+        <div id="complete-the-square-form">
+            
+            <div class="vars" data-ensure="H * H + K !== 0">
+                <var id="H"> randRangeNonZero(-10, 10) </var>
+                <var id="K"> randRangeNonZero(-10, 10) </var>
+                <var id="B"> -2 * H </var>
+                <var id="C"> H * H + K </var>
+            </div>
+            
+            <p class="question">
+                What is the vertex <code>\left(h, k\right)</code> of the following parabola?
+            </p>
+            <p>
+                <code>y = x^2 + <var>-2 * H</var>x + <var>H * H + K</var></code>
+            </p>
+
+            <div class="solution" data-type="multiple">
+                <p>
+                    <code>\left(h, k\right) = \large{(}</code>
+                    <span class="sol" required><var>H</var></span>
+                    <code>,</code>
+                    <span class="sol" required><var>K</var></span>
+                    <code>\large{)}</code>
+                </p>
+                <div class="example">
+                    a point, like <code>\left(-5, 3\right)</code>
+                </div>
+            </div>
+
+            <div class="hints">
+                <div>
+                    <p>
+                        To find the vertex of a parabola, we can rewrite it into vertex form:
+                    </p>
+                    <p>
+                        <code>y - \blue{k} = \left(x - \green{h}\right)^2</code>.
+                    </p>
+                    <p>
+                        Once a parabola is in vertex form, the vertex is the point
+                        <code>\left(\green{h}, \blue{k}\right)</code>.
+                    </p>
+                    <p>
+                        Let's rewrite the parabola
+                        <code>y = x^2 + <var>B</var>x + <var>C</var></code>
+                        into vertex form:
+                    <p>
+                        <code>y - </code>
+                        <span class="sol" required><var>K</var></span>
+                        <code> = \large{(}x - </code>
+                        <span class="sol" required><var>H</var></span>
+                        <code>\large{)}^2</code>
+                    </p>
+                    <p class="continue-message">
+                        Great! Now you have <code>\green{h}</code> and <code>\blue{k}</code>.
+                    </p>
+                    <p class="solution-message">
+                        
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        To rewrite the equation into vertex form, let's complete the square so
+                        we can factor the right side into a perfect square.
+                    </p>
+                    <p>
+                        <code>y - </code>
+                        <span class="sol" required><var>K</var></span>
+                        <code> = x^2 + <var>B</var>x + </code>
+                        <span class="sol" required><var>H * H</var></span>
+                    </p>
+                    <p class="continue-message">
+                        Great! Now to turn this into vertex form, just factor the rightside
+                        into a perfect square.
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        To complete the square, we need a constant term on the rightside
+                        that makes the right hand side a perfect square.
+                        First let's take the constant term and subtract
+                        it from both sides of the equation.
+                    </p>
+                    </p>
+                        Now we need a term that creates a perfect square. A perfect square has
+                        the form
+                    </p>
+                    <p>
+                        <code>(x + P) = x^2 + 2P x + P^2</code>.
+                    </p>
+                    <p>
+                        P is just half of the <code>x</code> term, and if we add <code>P^2</code>
+                        to both sides of the equation, the right side will become a perfect square.
+                    </p>
+                    <p>
+                        <code>y - <var>C</var> + </code>
+                        <span class="sol" required><var>H * H</var></span>
+                        <code> = x^2 + <var>B</var>x + </code>
+                        <span class="sol" required><var>H * H</var></span>
+                    </p>
+                    <p class="continue-message">
+                        Great! Now we can simplify the left side and factor the right
+                        side into a perfect square.
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        What is the half of the <code>x</code>-term coefficient of the equation
+                        <code>y = x^2 + <var>B</var>x + <var>C</var></code>?
+                    </p>
+                    <p>
+                        <code>P = </code>
+                        <span class="sol" required><var>B/2</var></span>
+                    </p>
+                    <p class="continue-message">
+                        Great! Now add <code>P^2</code> to both sides of the equation.
+                    </p>
+                </div>
+
+            </div> <!-- / class="hints" -->
+        </div> <!-- / problem -->
+
+    </div>
+</div>
+</body>
+</html>

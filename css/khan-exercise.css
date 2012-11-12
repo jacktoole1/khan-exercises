@@ -684,3 +684,11 @@ div.timeline-total {
 .qhint-feedback.incorrect {
   color: #CE4444;
 }
+
+/**
+ * Fix jQuery UI issue where shaking causes elements to rearrange
+ */
+.ui-effects-wrapper {
+	display:inline;
+}
+
